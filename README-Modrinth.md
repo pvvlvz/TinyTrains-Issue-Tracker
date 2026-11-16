@@ -36,6 +36,7 @@ It is **passenger only** by design: no freight, no inventories, no logistics. Ju
 | 🌙 **Runs unattended** | Moving trains load their own chunks and carry on after a restart. Chunk loading can be switched off per train. |
 | 🎨 **Paint jobs** | Craft a locomotive with any of the 16 dyes. |
 | 🛠️ **Operator tools** | `/tinytrains list`, `tp` and `stop` to find and stop any train (permission level 2). |
+| 💡 **Dynamic lights** | A built-in resource pack, off by default, lights up trains with LambDynamicLights. |
 | 🗺️ **Web maps** | Stations and moving trains appear on squaremap (both editions) and Pl3xMap (Fabric only). |
 
 <img src="https://raw.githubusercontent.com/pvvlvz/TinyTrains-Issue-Tracker/HEAD/images/station-sign.png" width="640" alt="A floating sign above a station reads Oak Halt, with a countdown to the departing train below it">
@@ -50,8 +51,9 @@ There are two editions. Download the file that matches your loader and Minecraft
 | Loader | Fabric Loader **0.19.5** or newer | NeoForge **21.1** (tested with 21.1.266) |
 | Required mods | [Fabric API](https://modrinth.com/mod/fabric-api) for 26.3 | None |
 | Java | **25** | **21** |
-| Release | 1.0.0 beta | 1.0.0 alpha |
+| Release | 1.0.1 beta | 1.0.1 alpha |
 | Optional web map (server only) | [squaremap](https://modrinth.com/mod/squaremap) 1.4.3+ or [Pl3xMap](https://modrinth.com/mod/pl3xmap) 26.3-557+ | [squaremap](https://modrinth.com/mod/squaremap) 1.3.2+ (Pl3xMap has no NeoForge build) |
+| Optional dynamic lights (client only) | LambDynamicLights for 26.3 | LambDynamicLights for NeoForge 1.21.1 |
 | Chains for coupling | Iron or copper | Iron (1.21.1 has no copper chain) |
 | Empty dedicated server | Pauses after 60 s by default. Set `pause-when-empty-seconds=0` to keep trains running. | Keeps ticking, so trains run with nobody online. |
 
