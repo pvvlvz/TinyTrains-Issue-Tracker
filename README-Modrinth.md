@@ -8,7 +8,7 @@
 <img src="https://img.shields.io/badge/Side-Client%20%2B%20Server-4A90D9?style=for-the-badge" alt="Required on client and server">
 <a href="https://github.com/pvvlvz/TinyTrains-Issue-Tracker/wiki"><img src="https://img.shields.io/badge/Wiki-Full%20guide-2F80ED?style=for-the-badge&logo=github" alt="Tiny Trains wiki"></a>
 
-<img src="https://raw.githubusercontent.com/pvvlvz/TinyTrains-Issue-Tracker/HEAD/images/hero-train.png" width="720" alt="An iron-white tank engine with two open wooden coaches coupled behind it, standing on a rail loop">
+<img src="https://raw.githubusercontent.com/pvvlvz/TinyTrains-Issue-Tracker/HEAD/images/hero-trains.png" width="720" alt="Green, blue and orange locomotives pulling open wooden coaches along rails through a forest, puffing chimney smoke">
 </center>
 
 Tiny Trains adds a little steam locomotive and open passenger coaches that run on the vanilla rails you already build. Couple
@@ -107,7 +107,7 @@ page, and every item has a tooltip that explains how to use it.
 - Trains can't use portals. Build a separate line in each dimension.
 - Vanilla minecarts and rails are unchanged, and there are no config files: everything is set in game.
 - One kind of locomotive and one kind of coach. Coaches can't be painted.
-- The NeoForge edition is an **alpha** port. The pictures here and on the wiki were taken with the Fabric edition.
+- The NeoForge edition is an **alpha** port. Apart from the first picture, the pictures here and on the wiki were taken with the Fabric edition.
 
 More in [Known Limitations](https://github.com/pvvlvz/TinyTrains-Issue-Tracker/wiki/Known-Limitations) and the
 [FAQ](https://github.com/pvvlvz/TinyTrains-Issue-Tracker/wiki/FAQ).
