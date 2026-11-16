@@ -1,5 +1,3 @@
-<img src="https://raw.githubusercontent.com/pvvlvz/TinyTrains-Issue-Tracker/HEAD/images/icon.png" width="96" alt="Tiny Trains icon">
-
 # Tiny Trains
 
 **Small, charming, coupled passenger trains for vanilla rails.**
