@@ -39,7 +39,7 @@ It is **passenger only** by design: no freight, no inventories, no logistics. Ju
 | 💡 **Dynamic lights** | A built-in resource pack, off by default, lights up trains with LambDynamicLights. |
 | 🗺️ **Web maps** | Stations and moving trains appear on squaremap (both editions) and Pl3xMap (Fabric only). |
 
-<img src="https://raw.githubusercontent.com/pvvlvz/TinyTrains-Issue-Tracker/HEAD/images/station-sign.png" width="640" alt="A floating sign above a station reads Oak Halt, with a countdown to the departing train below it">
+<img src="https://raw.githubusercontent.com/pvvlvz/TinyTrains-Issue-Tracker/HEAD/images/station-sign.png" width="640" alt="A floating sign above a station reads Oak Village Station, with a countdown to the departing train below it">
 
 ## 📦 Editions and requirements
 
