@@ -87,7 +87,7 @@ Both editions play the same apart from the rows above. The official launcher alr
 > 💡 The train keeps its throttle when you get off, so it carries on without you. To stop an automatic train,
 > switch it back to **Manual** in its train screen.
 
-<img src="https://raw.githubusercontent.com/pvvlvz/TinyTrains-Issue-Tracker/HEAD/images/driving.png" width="640" alt="Driving a train around a loop, with the speed and throttle shown above the hotbar and smoke from the chimney">
+<img src="https://raw.githubusercontent.com/pvvlvz/TinyTrains-Issue-Tracker/HEAD/images/train-screen.png" width="409" alt="The train screen: name, mode, top speed, acceleration, braking, chunk loading and schedule">
 
 ## 🔨 Crafting
 
