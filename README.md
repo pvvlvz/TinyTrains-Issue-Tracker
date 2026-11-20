@@ -15,6 +15,8 @@ your stations, finds its way through junctions and keeps running on the far side
 
 It is **passenger only** by design: no freight, no inventories, no logistics. Just trains, people, and places to go.
 
+> 📦 **Want more?** Check out [Tiny Trains: Expansion](https://www.curseforge.com/minecraft/mc-mods/tiny-trains-expansion).
+
 > 📖 **The full guide is on the [Tiny Trains wiki](https://github.com/pvvlvz/TinyTrains-Issue-Tracker/wiki)**: every
 > control, screen, track layout and message, plus troubleshooting.
 
