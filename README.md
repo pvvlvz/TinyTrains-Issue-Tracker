@@ -50,12 +50,10 @@ There are two editions. On the **Files** tab, pick the file that matches your lo
 | Loader | Fabric Loader **0.19.5** or newer | NeoForge **21.1** |
 | Required mods | Fabric API for 26.3 | None |
 | Java | **25** | **21** |
-| Release | 1.1.0 beta | 1.0.1 alpha |
+| Release | 1.1.0 beta | 1.1.0 beta |
 | Optional web map (server only) | squaremap 1.4.3+ or Pl3xMap 26.3-557+ | squaremap 1.3.2+ |
-| Optional minimap (client only) | Diorama 0.11.0+ | None |
+| Optional minimap (client only) | Diorama 0.11.0+ | Diorama 0.11.0+ |
 | Optional dynamic lights (client only) | LambDynamicLights for 26.3 | LambDynamicLights for NeoForge 1.21.1 |
-| Server config | `config/tinytrains.properties`: `train_chunk_loading=false` turns chunk loading off for every train | None |
-| Add-on API | Yes | No |
 | Chains for coupling | Iron or copper | Iron |
 | Empty dedicated server | Pauses after 60 s by default. Set `pause-when-empty-seconds=0` to keep trains running. | Keeps ticking, so trains run with nobody online. |
 
@@ -69,7 +67,7 @@ Both editions play the same apart from the rows above. The official launcher alr
 ## 🚀 Quick start
 
 1. **Craft** a Locomotive, a Passenger Coach or two, a couple of Stations, and grab some chains. In creative they are in
-   **Tools & Utilities** and, on Fabric, the **Tiny Trains** tab (or search "train").
+   **Tools & Utilities** and the **Tiny Trains** tab (or search "train").
 2. **Lay track.** Any vanilla rails work. A long straight line is easiest to start with.
 3. **Place the locomotive:** look along the track the way it should face and right-click a rail.
 4. **Place a coach** on the rail right behind it (the end without the chimney).
@@ -110,6 +108,8 @@ page, and every item has a tooltip that explains how to use it.
 - Only **plain rails** can be junctions. Route finding only sees loaded chunks, up to 4,096 rail blocks.
 - Trains can't use portals. Build a separate line in each dimension.
 - Vanilla minecarts and rails are unchanged. Trains and stations are set up in game.
+- Server owners can turn chunk loading off for every train with `train_chunk_loading=false` in
+  `config/tinytrains.properties`.
 - One kind of locomotive and one kind of coach. Coaches can't be painted.
 
 More in [Known Limitations](https://github.com/pvvlvz/TinyTrains-Issue-Tracker/wiki/Known-Limitations) and the
@@ -120,6 +120,26 @@ More in [Known Limitations](https://github.com/pvvlvz/TinyTrains-Issue-Tracker/w
 Open an issue on the [issue tracker](https://github.com/pvvlvz/TinyTrains-Issue-Tracker/issues). Include your loader
 (Fabric or NeoForge), your Minecraft, loader and Tiny Trains versions, and your other mods. If the game crashed, add
 `logs/latest.log`.
+
+## ❓ FAQ
+
+**Can I use Tiny Trains in my mod pack?**\
+Yes.
+
+**Can you port Tiny Trains to another loader or Minecraft version?**\
+Probably. [Open an issue](https://github.com/pvvlvz/TinyTrains-Issue-Tracker/issues) with the loader and version you'd
+like.
+
+**Does it need to be on the server, the client, or both?**\
+Both. Every player needs the same Tiny Trains file as the server.
+
+**Can trains carry items, animals or other mobs?**\
+Not by themselves: Tiny Trains is passenger only. Add-ons can bring their own cars through the add-on API.
+
+**Do trains keep running when nobody is nearby?**\
+Yes. Moving trains load their own chunks, and they carry on after a restart.
+
+More answers are on the wiki's [FAQ](https://github.com/pvvlvz/TinyTrains-Issue-Tracker/wiki/FAQ) page.
 
 ---
 
