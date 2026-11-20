@@ -31,11 +31,12 @@ It is **passenger only** by design: no freight, no inventories, no logistics. Ju
 | 🔀 **Junctions** | Automatic trains pick their route and flip plain-rail switches themselves. |
 | 🚦 **Signals** | An unpowered powered rail is a red signal. Trains press detector rails like minecarts. |
 | 🛡️ **Collision safety** | Trains never hit each other: they follow at a safe distance and book single track, so they meet at passing loops. |
-| 🌙 **Runs unattended** | Moving trains load their own chunks and carry on after a restart. Chunk loading can be switched off per train. |
+| 🌙 **Runs unattended** | Moving trains load their own chunks and carry on after a restart. Chunk loading can be switched off per train, or for the whole server. |
 | 🎨 **Paint jobs** | Craft a locomotive with any of the 16 dyes. |
 | 🛠️ **Operator tools** | `/tinytrains list`, `tp` and `stop` to find and stop any train (permission level 2). |
 | 💡 **Dynamic lights** | A built-in resource pack, off by default, lights up trains with LambDynamicLights. |
-| 🗺️ **Web maps** | Stations and moving trains appear on squaremap (both editions) and Pl3xMap (Fabric only). |
+| 🗺️ **Maps** | Stations and moving trains appear on squaremap and Pl3xMap web maps, and nearby trains on Diorama's minimap and map. |
+| 🧩 **Add-on API** | Add-ons can bring their own cars and hold trains at stations. |
 
 <img src="https://raw.githubusercontent.com/pvvlvz/TinyTrains-Issue-Tracker/HEAD/images/station-sign.png" width="640" alt="A floating sign above a station reads Oak Village Station, with a countdown to the departing train below it">
 
@@ -46,13 +47,16 @@ There are two editions. On the **Files** tab, pick the file that matches your lo
 | | **Fabric** | **NeoForge** |
 |---|---|---|
 | Minecraft | **26.3** | **1.21.1** |
-| Loader | Fabric Loader **0.19.5** or newer | NeoForge **21.1** (tested with 21.1.266) |
+| Loader | Fabric Loader **0.19.5** or newer | NeoForge **21.1** |
 | Required mods | Fabric API for 26.3 | None |
 | Java | **25** | **21** |
-| Release | 1.0.1 beta | 1.0.1 alpha |
-| Optional web map (server only) | squaremap 1.4.3+ or Pl3xMap 26.3-557+ | squaremap 1.3.2+ (Pl3xMap has no NeoForge build) |
+| Release | 1.1.0 beta | 1.0.1 alpha |
+| Optional web map (server only) | squaremap 1.4.3+ or Pl3xMap 26.3-557+ | squaremap 1.3.2+ |
+| Optional minimap (client only) | Diorama newer than 0.10.2 | None |
 | Optional dynamic lights (client only) | LambDynamicLights for 26.3 | LambDynamicLights for NeoForge 1.21.1 |
-| Chains for coupling | Iron or copper | Iron (1.21.1 has no copper chain) |
+| Server config | `config/tinytrains.properties`: `train_chunk_loading=false` turns chunk loading off for every train | None |
+| Add-on API | Yes | No |
+| Chains for coupling | Iron or copper | Iron |
 | Empty dedicated server | Pauses after 60 s by default. Set `pause-when-empty-seconds=0` to keep trains running. | Keeps ticking, so trains run with nobody online. |
 
 Both editions play the same apart from the rows above. The official launcher already ships the right Java version.
@@ -65,7 +69,7 @@ Both editions play the same apart from the rows above. The official launcher alr
 ## 🚀 Quick start
 
 1. **Craft** a Locomotive, a Passenger Coach or two, a couple of Stations, and grab some chains. In creative they are in
-   **Tools & Utilities** (or search "train").
+   **Tools & Utilities** and, on Fabric, the **Tiny Trains** tab (or search "train").
 2. **Lay track.** Any vanilla rails work. A long straight line is easiest to start with.
 3. **Place the locomotive:** look along the track the way it should face and right-click a rail.
 4. **Place a coach** on the rail right behind it (the end without the chimney).
@@ -105,9 +109,8 @@ page, and every item has a tooltip that explains how to use it.
   and wait.
 - Only **plain rails** can be junctions. Route finding only sees loaded chunks, up to 4,096 rail blocks.
 - Trains can't use portals. Build a separate line in each dimension.
-- Vanilla minecarts and rails are unchanged, and there are no config files: everything is set in game.
+- Vanilla minecarts and rails are unchanged. Trains and stations are set up in game.
 - One kind of locomotive and one kind of coach. Coaches can't be painted.
-- The NeoForge edition is an **alpha** port. Apart from the first picture, the pictures here and on the wiki were taken with the Fabric edition.
 
 More in [Known Limitations](https://github.com/pvvlvz/TinyTrains-Issue-Tracker/wiki/Known-Limitations) and the
 [FAQ](https://github.com/pvvlvz/TinyTrains-Issue-Tracker/wiki/FAQ).
