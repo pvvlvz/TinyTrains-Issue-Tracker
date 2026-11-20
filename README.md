@@ -52,7 +52,7 @@ There are two editions. On the **Files** tab, pick the file that matches your lo
 | Java | **25** | **21** |
 | Release | 1.1.0 beta | 1.0.1 alpha |
 | Optional web map (server only) | squaremap 1.4.3+ or Pl3xMap 26.3-557+ | squaremap 1.3.2+ |
-| Optional minimap (client only) | Diorama newer than 0.10.2 | None |
+| Optional minimap (client only) | Diorama 0.11.0+ | None |
 | Optional dynamic lights (client only) | LambDynamicLights for 26.3 | LambDynamicLights for NeoForge 1.21.1 |
 | Server config | `config/tinytrains.properties`: `train_chunk_loading=false` turns chunk loading off for every train | None |
 | Add-on API | Yes | No |
